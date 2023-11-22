@@ -17,12 +17,6 @@ const config = {
     DB_DATABASE: process.env.DB_DATABASE || 'content-create-db',
     DB_USERNAME: process.env.DB_USERNAME || 'postgres',
     DB_PASSWORD: process.env.DB_PASSWORD || 'password',
-    //mi password
-    // DB_PASSWORD: process.env.DB_PASSWORD || 'HolaMundo123',
-    // MONGODB_CNN: process.env.MONGODB_CNN || 'mongodb+srv://content-create:t2jOSWZVb7Qq1CTU@content-create.tykat1s.mongodb.net/',
-    // MONGODB_CNN: process.env.MONGODB_CNN || 'mongodb+srv://content-create:t2jOSWZVb7Qq1CTU@content-create.tykat1s.mongodb.net/?retryWrites=true&w=majority',
-    // MONGODB_PASSWORD: process.env.MONGODB_PASSWORD || 't2jOSWZVb7Qq1CTU',
-    // MONGODB_USER: process.env.MONGODB_USER || 'content-create',
     API_KEY: process.env.API_KEY || '',
     JWT_AUTH: process.env.JWT_AUTH || 'e$tAcL@v3Es$cr3tA',
     JWT_RECOVERY: process.env.JWT_RECOVERY || '',
