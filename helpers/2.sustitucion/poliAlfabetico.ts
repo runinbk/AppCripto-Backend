@@ -1,4 +1,4 @@
-export function cifradoSustitucionPolialfabética(texto: string, clave: string): string {
+export function cifradoSustitucionPolialfabetica(texto: string, clave: string): string {
   let resultado = '';
 
   for (let i = 0; i < texto.length; i++) {
@@ -10,7 +10,7 @@ export function cifradoSustitucionPolialfabética(texto: string, clave: string):
       const letraCifrada = cifrarLetra(letraOriginal, desplazamiento);
       resultado += letraCifrada;
     } else {
-      resultado += letraOriginal; // Mantener caracteres no alfabéticos sin cambios
+      resultado += letraOriginal; // Mantener caracteres no alfabeticos sin cambios
     }
   }
 
@@ -25,14 +25,14 @@ function cifrarLetra(letra: string, desplazamiento: number): string {
 }
 
 /**
- * El cifrado de sustitución polialfabética es reversible siempre que conozcas la clave utilizada para cifrar el mensaje.
+ * El cifrado de sustitucion polialfabetica es reversible siempre que conozcas la clave utilizada para cifrar el mensaje.
  */
 
 // Ejemplo de uso
 //   const mensajeOriginal = "HELLO";
 //   const clave = "KEY";
 
-//   const mensajeCifrado = cifradoSustitucionPolialfabética(mensajeOriginal, clave);
+//   const mensajeCifrado = cifradoSustitucionPolialfabetica(mensajeOriginal, clave);
 //   console.log("Mensaje Original:", mensajeOriginal);
 //   console.log("Mensaje Cifrado:", mensajeCifrado);
 

@@ -1,4 +1,4 @@
-export function cifradoMonoalfabético(texto: string, clave: string): string {
+export function cifradoMonoalfabetico(texto: string, clave: string): string {
     const alfabetoOriginal = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const alfabetoCifrado = clave.toUpperCase();
 
@@ -12,14 +12,14 @@ export function cifradoMonoalfabético(texto: string, clave: string): string {
             const letraCifrada = alfabetoCifrado[indice];
             resultado += letraCifrada;
         } else {
-            resultado += letraOriginal; // Mantener caracteres no alfabéticos sin cambios
+            resultado += letraOriginal; // Mantener caracteres no alfabeticos sin cambios
         }
     }
 
     return resultado;
 }
 
-export function descifradoMonoalfabético(textoCifrado: string, clave: string): string {
+export function descifradoMonoalfabetico(textoCifrado: string, clave: string): string {
     const alfabetoOriginal = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const alfabetoCifrado = clave.toUpperCase();
 
@@ -33,7 +33,7 @@ export function descifradoMonoalfabético(textoCifrado: string, clave: string): 
             const letraOriginal = alfabetoOriginal[indice];
             resultado += letraOriginal;
         } else {
-            resultado += letraCifrada; // Mantener caracteres no alfabéticos sin cambios
+            resultado += letraCifrada; // Mantener caracteres no alfabeticos sin cambios
         }
     }
 
@@ -42,18 +42,18 @@ export function descifradoMonoalfabético(textoCifrado: string, clave: string): 
 
 //   // Ejemplo de uso
 //   const mensajeCifrado = "QIWWP";
-//   const claveMonoalfabética = "QWERTYUIOPASDFGHJKLZXCVBNM";
+//   const claveMonoalfabetica = "QWERTYUIOPASDFGHJKLZXCVBNM";
 
-//   const mensajeDescifrado = descifradoMonoalfabético(mensajeCifrado, claveMonoalfabética);
+//   const mensajeDescifrado = descifradoMonoalfabetico(mensajeCifrado, claveMonoalfabetica);
 //   console.log("Mensaje Cifrado:", mensajeCifrado);
 //   console.log("Mensaje Descifrado:", mensajeDescifrado);
 
 
 //   // Ejemplo de uso
 //   const mensajeOriginal = "HELLO";
-//   const claveMonoalfabética = "QWERTYUIOPASDFGHJKLZXCVBNM";
+//   const claveMonoalfabetica = "QWERTYUIOPASDFGHJKLZXCVBNM";
 
-//   const mensajeCifrado = cifradoMonoalfabético(mensajeOriginal, claveMonoalfabética);
+//   const mensajeCifrado = cifradoMonoalfabetico(mensajeOriginal, claveMonoalfabetica);
 //   console.log("Mensaje Original:", mensajeOriginal);
 //   console.log("Mensaje Cifrado:", mensajeCifrado);
 

@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.cifradoSustitucionPolialfabética = void 0;
-function cifradoSustitucionPolialfabética(texto, clave) {
+exports.cifradoSustitucionPolialfabetica = void 0;
+function cifradoSustitucionPolialfabetica(texto, clave) {
     let resultado = '';
     for (let i = 0; i < texto.length; i++) {
         const letraOriginal = texto[i];
@@ -12,12 +12,12 @@ function cifradoSustitucionPolialfabética(texto, clave) {
             resultado += letraCifrada;
         }
         else {
-            resultado += letraOriginal; // Mantener caracteres no alfabéticos sin cambios
+            resultado += letraOriginal; // Mantener caracteres no alfabeticos sin cambios
         }
     }
     return resultado;
 }
-exports.cifradoSustitucionPolialfabética = cifradoSustitucionPolialfabética;
+exports.cifradoSustitucionPolialfabetica = cifradoSustitucionPolialfabetica;
 function cifrarLetra(letra, desplazamiento) {
     const esMayuscula = letra === letra.toUpperCase();
     const base = esMayuscula ? 'A'.charCodeAt(0) : 'a'.charCodeAt(0);
@@ -25,12 +25,12 @@ function cifrarLetra(letra, desplazamiento) {
     return esMayuscula ? letraCifrada : letraCifrada.toLowerCase();
 }
 /**
- * El cifrado de sustitución polialfabética es reversible siempre que conozcas la clave utilizada para cifrar el mensaje.
+ * El cifrado de sustitucion polialfabetica es reversible siempre que conozcas la clave utilizada para cifrar el mensaje.
  */
 // Ejemplo de uso
 //   const mensajeOriginal = "HELLO";
 //   const clave = "KEY";
-//   const mensajeCifrado = cifradoSustitucionPolialfabética(mensajeOriginal, clave);
+//   const mensajeCifrado = cifradoSustitucionPolialfabetica(mensajeOriginal, clave);
 //   console.log("Mensaje Original:", mensajeOriginal);
 //   console.log("Mensaje Cifrado:", mensajeCifrado);
 //# sourceMappingURL=poliAlfabetico.js.map

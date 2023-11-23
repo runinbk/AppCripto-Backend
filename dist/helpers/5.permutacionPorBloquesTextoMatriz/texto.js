@@ -8,7 +8,7 @@ function cifradoPorBloques(mensaje, longitudBloque) {
     for (let i = 0; i < cantidadBloques; i++) {
         bloques.push(mensaje.slice(i * longitudBloque, (i + 1) * longitudBloque));
     }
-    // Paso 2: Aplicar una permutación a cada bloque (en este caso, transposición)
+    // Paso 2: Aplicar una permutacion a cada bloque (en este caso, transposicion)
     const bloquesPermutados = bloques.map(bloque => permutarBloque(bloque));
     // Paso 3: Concatenar los bloques permutados para obtener el mensaje cifrado
     const mensajeCifrado = bloquesPermutados.join('');
@@ -16,11 +16,11 @@ function cifradoPorBloques(mensaje, longitudBloque) {
 }
 exports.cifradoPorBloques = cifradoPorBloques;
 function permutarBloque(bloque) {
-    // En este ejemplo, se realiza una transposición simple invirtiendo el orden de los caracteres
+    // En este ejemplo, se realiza una transposicion simple invirtiendo el orden de los caracteres
     return bloque.split('').reverse().join('');
 }
 /**
- * El cifrado por sustitución polialfabética periódico es autoreversible
+ * El cifrado por sustitucion polialfabetica periodico es autoreversible
  */
 // Ejemplo de uso
 //   const mensajeOriginal: string = "ESTEESUNMENSAJE";

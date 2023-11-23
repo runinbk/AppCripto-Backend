@@ -1,12 +1,12 @@
 import { Request, Response } from 'express';
 
-import { cifradoPolialfabéticoPeriódico, descifradoPolialfabéticoPeriódico } from "../helpers/3.sustitucionMonogramicaPolialfabeto/polialfabeticosPeriodicos";
+import { cifradoPolialfabeticoPeriodico, descifradoPolialfabeticoPeriodico } from "../helpers/3.sustitucionMonogramicaPolialfabeto/polialfabeticosPeriodicos";
 
-const cifradoPolialfabéticoPeriódicoController = async (req: Request, res: Response): Promise<void> => {
+const cifradoPolialfabeticoPeriodicoController = async (req: Request, res: Response): Promise<void> => {
     const { mensaje, claves } = req.body;
 
     try {
-        const mensajeCifrado = cifradoPolialfabéticoPeriódico(mensaje, claves);
+        const mensajeCifrado = cifradoPolialfabeticoPeriodico(mensaje, claves);
         res.json({
             mensajeCifrado
         });
@@ -19,11 +19,11 @@ const cifradoPolialfabéticoPeriódicoController = async (req: Request, res: Res
     }
 };
 
-const descifradoPolialfabéticoPeriódicoController = async (req: Request, res: Response): Promise<void> => {
+const descifradoPolialfabeticoPeriodicoController = async (req: Request, res: Response): Promise<void> => {
     const { mensaje, claves } = req.body;
 
     try {
-        const mensajeDescifrado = descifradoPolialfabéticoPeriódico(mensaje, claves);
+        const mensajeDescifrado = descifradoPolialfabeticoPeriodico(mensaje, claves);
         res.json({
             mensajeDescifrado
         });
@@ -37,6 +37,6 @@ const descifradoPolialfabéticoPeriódicoController = async (req: Request, res: 
 };
 
 export {
-    cifradoPolialfabéticoPeriódicoController,
-    descifradoPolialfabéticoPeriódicoController
+    cifradoPolialfabeticoPeriodicoController,
+    descifradoPolialfabeticoPeriodicoController
 };

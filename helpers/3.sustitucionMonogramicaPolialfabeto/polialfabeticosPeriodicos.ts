@@ -1,4 +1,4 @@
-export function cifradoPolialfabéticoPeriódico(texto: string, claves: string[]): string {
+export function cifradoPolialfabeticoPeriodico(texto: string, claves: string[]): string {
     let resultado = '';
 
     for (let i = 0; i < texto.length; i++) {
@@ -10,7 +10,7 @@ export function cifradoPolialfabéticoPeriódico(texto: string, claves: string[]
             const letraCifrada = cifrarLetraMono(letraOriginal, claveActual[indiceClave % claveActual.length]);
             resultado += letraCifrada;
         } else {
-            resultado += letraOriginal; // Mantener caracteres no alfabéticos sin cambios
+            resultado += letraOriginal; // Mantener caracteres no alfabeticos sin cambios
         }
     }
 
@@ -31,12 +31,12 @@ function cifrarLetraMono(letraOriginal: string, clave: string): string {
 //   const mensajeOriginal = "HELLO";
 //   const claves = ["KEY1", "KEY2", "KEY3"];
 
-//   const mensajeCifrado = cifradoPolialfabéticoPeriódico(mensajeOriginal, claves);
+//   const mensajeCifrado = cifradoPolialfabeticoPeriodico(mensajeOriginal, claves);
 //   console.log("Mensaje Original:", mensajeOriginal);
 //   console.log("Mensaje Cifrado:", mensajeCifrado);
 
 
-export function descifradoPolialfabéticoPeriódico(textoCifrado: string, claves: string[]): string {
+export function descifradoPolialfabeticoPeriodico(textoCifrado: string, claves: string[]): string {
     let resultado = '';
 
     for (let i = 0; i < textoCifrado.length; i++) {
@@ -48,7 +48,7 @@ export function descifradoPolialfabéticoPeriódico(textoCifrado: string, claves
             const letraDescifrada = descifrarLetra(letraCifrada, claveActual[indiceClave % claveActual.length]);
             resultado += letraDescifrada;
         } else {
-            resultado += letraCifrada; // Mantener caracteres no alfabéticos sin cambios
+            resultado += letraCifrada; // Mantener caracteres no alfabeticos sin cambios
         }
     }
 
@@ -69,6 +69,6 @@ function descifrarLetra(letraCifrada: string, clave: string): string {
 //   const mensajeCifrado = "RIJVSUYVJN";
 //   const claves = ["KEY1", "KEY2", "KEY3"];
 
-//   const mensajeDescifrado = descifradoPolialfabéticoPeriódico(mensajeCifrado, claves);
+//   const mensajeDescifrado = descifradoPolialfabeticoPeriodico(mensajeCifrado, claves);
 //   console.log("Mensaje Cifrado:", mensajeCifrado);
 //   console.log("Mensaje Descifrado:", mensajeDescifrado);

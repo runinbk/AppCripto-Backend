@@ -1,12 +1,12 @@
 import { Request, Response } from 'express';
 
-import { cifradoSustitucionPolialfabética } from "../helpers/2.sustitucion/poliAlfabetico";
+import { cifradoSustitucionPolialfabetica } from "../helpers/2.sustitucion/poliAlfabetico";
 
-const cifradoSustitucionPolialfabéticaController = async (req: Request, res: Response): Promise<void> => {
+const cifradoSustitucionPolialfabeticaController = async (req: Request, res: Response): Promise<void> => {
     const { mensaje, clave } = req.body;
 
     try {
-        const mensajeCifrado = cifradoSustitucionPolialfabética(mensaje, clave);
+        const mensajeCifrado = cifradoSustitucionPolialfabetica(mensaje, clave);
         res.json({
             mensajeCifrado,
             msg: 'Para descifrar vuelva a aplicar el mismo metodo con el mensaje sifrado y el mismo valor que acompaña al cifrado.'
@@ -21,5 +21,5 @@ const cifradoSustitucionPolialfabéticaController = async (req: Request, res: Re
 };
 
 export {
-    cifradoSustitucionPolialfabéticaController,
+    cifradoSustitucionPolialfabeticaController,
 };

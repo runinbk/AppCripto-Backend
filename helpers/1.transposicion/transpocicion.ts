@@ -30,14 +30,14 @@ export function cifradoZigZag(mensaje: string, líneas: number): string {
     const matriz: string[][] = Array.from({ length: líneas }, () => []);
 
     let fila = 0;
-    let dirección = 1;
+    let direccion = 1;
 
     for (const letra of mensaje) {
         matriz[fila].push(letra);
-        fila += dirección;
+        fila += direccion;
 
         if (fila === líneas - 1 || fila === 0) {
-            dirección *= -1;
+            direccion *= -1;
         }
     }
 

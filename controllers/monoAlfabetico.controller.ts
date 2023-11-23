@@ -1,12 +1,12 @@
 import { Request, Response } from 'express';
 
-import { cifradoMonoalfabético, descifradoMonoalfabético } from "../helpers/2.sustitucion/monoAlfabetico";
+import { cifradoMonoalfabetico, descifradoMonoalfabetico } from "../helpers/2.sustitucion/monoAlfabetico";
 
-const cifradoMonoalfabéticoController = async (req: Request, res: Response): Promise<void> => {
+const cifradoMonoalfabeticoController = async (req: Request, res: Response): Promise<void> => {
     const { mensaje, clave } = req.body;
 
     try {
-        const mensajeCifrado = cifradoMonoalfabético(mensaje, clave);
+        const mensajeCifrado = cifradoMonoalfabetico(mensaje, clave);
         res.json({
             mensajeCifrado
         });
@@ -19,11 +19,11 @@ const cifradoMonoalfabéticoController = async (req: Request, res: Response): Pr
     }
 };
 
-const descifradoMonoalfabéticoController = async (req: Request, res: Response): Promise<void> => {
+const descifradoMonoalfabeticoController = async (req: Request, res: Response): Promise<void> => {
     const { mensaje, clave } = req.body;
 
     try {
-        const mensajeDescifrado = descifradoMonoalfabético(mensaje, clave);
+        const mensajeDescifrado = descifradoMonoalfabetico(mensaje, clave);
         res.json({
             mensajeDescifrado
         });
@@ -37,6 +37,6 @@ const descifradoMonoalfabéticoController = async (req: Request, res: Response):
 };
 
 export {
-    cifradoMonoalfabéticoController,
-    descifradoMonoalfabéticoController
+    cifradoMonoalfabeticoController,
+    descifradoMonoalfabeticoController
 };

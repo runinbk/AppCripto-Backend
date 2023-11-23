@@ -9,12 +9,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.descifradoPolialfabéticoPeriódicoController = exports.cifradoPolialfabéticoPeriódicoController = void 0;
+exports.descifradoPolialfabeticoPeriodicoController = exports.cifradoPolialfabeticoPeriodicoController = void 0;
 const polialfabeticosPeriodicos_1 = require("../helpers/3.sustitucionMonogramicaPolialfabeto/polialfabeticosPeriodicos");
-const cifradoPolialfabéticoPeriódicoController = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+const cifradoPolialfabeticoPeriodicoController = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { mensaje, claves } = req.body;
     try {
-        const mensajeCifrado = (0, polialfabeticosPeriodicos_1.cifradoPolialfabéticoPeriódico)(mensaje, claves);
+        const mensajeCifrado = (0, polialfabeticosPeriodicos_1.cifradoPolialfabeticoPeriodico)(mensaje, claves);
         res.json({
             mensajeCifrado
         });
@@ -26,11 +26,11 @@ const cifradoPolialfabéticoPeriódicoController = (req, res) => __awaiter(void 
         });
     }
 });
-exports.cifradoPolialfabéticoPeriódicoController = cifradoPolialfabéticoPeriódicoController;
-const descifradoPolialfabéticoPeriódicoController = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+exports.cifradoPolialfabeticoPeriodicoController = cifradoPolialfabeticoPeriodicoController;
+const descifradoPolialfabeticoPeriodicoController = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { mensaje, claves } = req.body;
     try {
-        const mensajeDescifrado = (0, polialfabeticosPeriodicos_1.descifradoPolialfabéticoPeriódico)(mensaje, claves);
+        const mensajeDescifrado = (0, polialfabeticosPeriodicos_1.descifradoPolialfabeticoPeriodico)(mensaje, claves);
         res.json({
             mensajeDescifrado
         });
@@ -42,5 +42,5 @@ const descifradoPolialfabéticoPeriódicoController = (req, res) => __awaiter(vo
         });
     }
 });
-exports.descifradoPolialfabéticoPeriódicoController = descifradoPolialfabéticoPeriódicoController;
+exports.descifradoPolialfabeticoPeriodicoController = descifradoPolialfabeticoPeriodicoController;
 //# sourceMappingURL=poliAlfabeticosPeriodicos.controller.js.map

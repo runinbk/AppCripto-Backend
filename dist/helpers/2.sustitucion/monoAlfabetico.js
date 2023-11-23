@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.descifradoMonoalfabético = exports.cifradoMonoalfabético = void 0;
-function cifradoMonoalfabético(texto, clave) {
+exports.descifradoMonoalfabetico = exports.cifradoMonoalfabetico = void 0;
+function cifradoMonoalfabetico(texto, clave) {
     const alfabetoOriginal = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const alfabetoCifrado = clave.toUpperCase();
     let resultado = '';
@@ -13,13 +13,13 @@ function cifradoMonoalfabético(texto, clave) {
             resultado += letraCifrada;
         }
         else {
-            resultado += letraOriginal; // Mantener caracteres no alfabéticos sin cambios
+            resultado += letraOriginal; // Mantener caracteres no alfabeticos sin cambios
         }
     }
     return resultado;
 }
-exports.cifradoMonoalfabético = cifradoMonoalfabético;
-function descifradoMonoalfabético(textoCifrado, clave) {
+exports.cifradoMonoalfabetico = cifradoMonoalfabetico;
+function descifradoMonoalfabetico(textoCifrado, clave) {
     const alfabetoOriginal = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const alfabetoCifrado = clave.toUpperCase();
     let resultado = '';
@@ -31,22 +31,22 @@ function descifradoMonoalfabético(textoCifrado, clave) {
             resultado += letraOriginal;
         }
         else {
-            resultado += letraCifrada; // Mantener caracteres no alfabéticos sin cambios
+            resultado += letraCifrada; // Mantener caracteres no alfabeticos sin cambios
         }
     }
     return resultado;
 }
-exports.descifradoMonoalfabético = descifradoMonoalfabético;
+exports.descifradoMonoalfabetico = descifradoMonoalfabetico;
 //   // Ejemplo de uso
 //   const mensajeCifrado = "QIWWP";
-//   const claveMonoalfabética = "QWERTYUIOPASDFGHJKLZXCVBNM";
-//   const mensajeDescifrado = descifradoMonoalfabético(mensajeCifrado, claveMonoalfabética);
+//   const claveMonoalfabetica = "QWERTYUIOPASDFGHJKLZXCVBNM";
+//   const mensajeDescifrado = descifradoMonoalfabetico(mensajeCifrado, claveMonoalfabetica);
 //   console.log("Mensaje Cifrado:", mensajeCifrado);
 //   console.log("Mensaje Descifrado:", mensajeDescifrado);
 //   // Ejemplo de uso
 //   const mensajeOriginal = "HELLO";
-//   const claveMonoalfabética = "QWERTYUIOPASDFGHJKLZXCVBNM";
-//   const mensajeCifrado = cifradoMonoalfabético(mensajeOriginal, claveMonoalfabética);
+//   const claveMonoalfabetica = "QWERTYUIOPASDFGHJKLZXCVBNM";
+//   const mensajeCifrado = cifradoMonoalfabetico(mensajeOriginal, claveMonoalfabetica);
 //   console.log("Mensaje Original:", mensajeOriginal);
 //   console.log("Mensaje Cifrado:", mensajeCifrado);
 //# sourceMappingURL=monoAlfabetico.js.map

@@ -7,15 +7,15 @@ import {
     cifradoZigZagController
 } from '../controllers/transposicion.controller';
 import {
-    cifradoMonoalfabéticoController,
-    descifradoMonoalfabéticoController
+    cifradoMonoalfabeticoController,
+    descifradoMonoalfabeticoController
 } from '../controllers/monoAlfabetico.controller';
 import {
-    cifradoSustitucionPolialfabéticaController
+    cifradoSustitucionPolialfabeticaController
 } from '../controllers/poliAlfabetico.controller';
 import {
-    cifradoPolialfabéticoPeriódicoController,
-    descifradoPolialfabéticoPeriódicoController
+    cifradoPolialfabeticoPeriodicoController,
+    descifradoPolialfabeticoPeriodicoController
 } from '../controllers/poliAlfabeticosPeriodicos.controller';
 import {
     cifradoPlayfairController,
@@ -47,25 +47,25 @@ router.post('/cifradoZigZag', [
     check('mensaje', 'El mensaje es obligatoria').not().isEmpty(),
 ], cifradoZigZagController);
 
-router.post('/cifradoMonoalfabético', [
+router.post('/cifradoMonoalfabetico', [
     check('mensaje', 'El mensaje es obligatoria').not().isEmpty(),
-], cifradoMonoalfabéticoController);
+], cifradoMonoalfabeticoController);
 
-router.post('/descifradoMonoalfabético', [
+router.post('/descifradoMonoalfabetico', [
     check('mensaje', 'El mensaje es obligatoria').not().isEmpty(),
-], descifradoMonoalfabéticoController);
+], descifradoMonoalfabeticoController);
 
-router.post('/cifradoSustitucionPolialfabética', [
+router.post('/cifradoSustitucionPolialfabetica', [
     check('mensaje', 'El mensaje es obligatoria').not().isEmpty(),
-], cifradoSustitucionPolialfabéticaController);
+], cifradoSustitucionPolialfabeticaController);
 
-router.post('/cifradoPolialfabéticoPeriódico', [
+router.post('/cifradoPolialfabeticoPeriodico', [
     check('mensaje', 'El mensaje es obligatoria').not().isEmpty(),
-], cifradoPolialfabéticoPeriódicoController);
+], cifradoPolialfabeticoPeriodicoController);
 
-router.post('/descifradoPolialfabéticoPeriódico', [
+router.post('/descifradoPolialfabeticoPeriodico', [
     check('mensaje', 'El mensaje es obligatoria').not().isEmpty(),
-], descifradoPolialfabéticoPeriódicoController);
+], descifradoPolialfabeticoPeriodicoController);
 
 router.post('/cifradoPlayfair', [
     check('mensaje', 'El mensaje es obligatoria').not().isEmpty(),

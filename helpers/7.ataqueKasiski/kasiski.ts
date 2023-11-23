@@ -1,5 +1,5 @@
 export function kasiskiAttack(ciphertext: string): number {
-    const MIN_REPEAT_LENGTH = 3;  // Longitud mínima de repetición para buscar
+    const MIN_REPEAT_LENGTH = 3;  // Longitud mínima de repeticion para buscar
 
     const repetitions: { [key: string]: number[] } = {};
 
@@ -29,7 +29,7 @@ export function kasiskiAttack(ciphertext: string): number {
     return probableKeyLength;
 }
 
-// Función para encontrar factores comunes de un conjunto de números
+// Funcion para encontrar factores comunes de un conjunto de números
 function findCommonFactors(numbers: number[]): number[] {
     const factors: number[] = [];
     const min = Math.min(...numbers);
@@ -43,7 +43,7 @@ function findCommonFactors(numbers: number[]): number[] {
     return factors;
 }
 
-// Función para encontrar el máximo común factor de una lista de números
+// Funcion para encontrar el máximo común factor de una lista de números
 function findMaxCommonFactor(numbers: number[]): number {
     return numbers.reduce((gcd, num) => {
         while (num !== 0) {

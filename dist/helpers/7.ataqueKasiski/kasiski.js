@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.kasiskiAttack = void 0;
 function kasiskiAttack(ciphertext) {
-    const MIN_REPEAT_LENGTH = 3; // Longitud mínima de repetición para buscar
+    const MIN_REPEAT_LENGTH = 3; // Longitud mínima de repeticion para buscar
     const repetitions = {};
     // Buscar repeticiones en el texto cifrado
     for (let i = 0; i < ciphertext.length - MIN_REPEAT_LENGTH; i++) {
@@ -26,7 +26,7 @@ function kasiskiAttack(ciphertext) {
     return probableKeyLength;
 }
 exports.kasiskiAttack = kasiskiAttack;
-// Función para encontrar factores comunes de un conjunto de números
+// Funcion para encontrar factores comunes de un conjunto de números
 function findCommonFactors(numbers) {
     const factors = [];
     const min = Math.min(...numbers);
@@ -37,7 +37,7 @@ function findCommonFactors(numbers) {
     }
     return factors;
 }
-// Función para encontrar el máximo común factor de una lista de números
+// Funcion para encontrar el máximo común factor de una lista de números
 function findMaxCommonFactor(numbers) {
     return numbers.reduce((gcd, num) => {
         while (num !== 0) {

@@ -9,12 +9,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.descifradoMonoalfabéticoController = exports.cifradoMonoalfabéticoController = void 0;
+exports.descifradoMonoalfabeticoController = exports.cifradoMonoalfabeticoController = void 0;
 const monoAlfabetico_1 = require("../helpers/2.sustitucion/monoAlfabetico");
-const cifradoMonoalfabéticoController = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+const cifradoMonoalfabeticoController = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { mensaje, clave } = req.body;
     try {
-        const mensajeCifrado = (0, monoAlfabetico_1.cifradoMonoalfabético)(mensaje, clave);
+        const mensajeCifrado = (0, monoAlfabetico_1.cifradoMonoalfabetico)(mensaje, clave);
         res.json({
             mensajeCifrado
         });
@@ -26,11 +26,11 @@ const cifradoMonoalfabéticoController = (req, res) => __awaiter(void 0, void 0,
         });
     }
 });
-exports.cifradoMonoalfabéticoController = cifradoMonoalfabéticoController;
-const descifradoMonoalfabéticoController = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+exports.cifradoMonoalfabeticoController = cifradoMonoalfabeticoController;
+const descifradoMonoalfabeticoController = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { mensaje, clave } = req.body;
     try {
-        const mensajeDescifrado = (0, monoAlfabetico_1.descifradoMonoalfabético)(mensaje, clave);
+        const mensajeDescifrado = (0, monoAlfabetico_1.descifradoMonoalfabetico)(mensaje, clave);
         res.json({
             mensajeDescifrado
         });
@@ -42,5 +42,5 @@ const descifradoMonoalfabéticoController = (req, res) => __awaiter(void 0, void
         });
     }
 });
-exports.descifradoMonoalfabéticoController = descifradoMonoalfabéticoController;
+exports.descifradoMonoalfabeticoController = descifradoMonoalfabeticoController;
 //# sourceMappingURL=monoAlfabetico.controller.js.map

@@ -109,7 +109,7 @@ function descifrarPar(matriz, par) {
     }
     return descifrado;
 }
-// Resto del código (funciones auxiliares)...
+// Resto del codigo (funciones auxiliares)...
 // Ejemplo de uso
 //   const mensajeCifrado = "RHELXOX";
 //   const matrizClave = generarMatrizClave("KEYWORD");

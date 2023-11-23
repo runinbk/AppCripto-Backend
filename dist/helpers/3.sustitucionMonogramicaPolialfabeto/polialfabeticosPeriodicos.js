@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.descifradoPolialfabéticoPeriódico = exports.cifradoPolialfabéticoPeriódico = void 0;
-function cifradoPolialfabéticoPeriódico(texto, claves) {
+exports.descifradoPolialfabeticoPeriodico = exports.cifradoPolialfabeticoPeriodico = void 0;
+function cifradoPolialfabeticoPeriodico(texto, claves) {
     let resultado = '';
     for (let i = 0; i < texto.length; i++) {
         const letraOriginal = texto[i];
@@ -12,12 +12,12 @@ function cifradoPolialfabéticoPeriódico(texto, claves) {
             resultado += letraCifrada;
         }
         else {
-            resultado += letraOriginal; // Mantener caracteres no alfabéticos sin cambios
+            resultado += letraOriginal; // Mantener caracteres no alfabeticos sin cambios
         }
     }
     return resultado;
 }
-exports.cifradoPolialfabéticoPeriódico = cifradoPolialfabéticoPeriódico;
+exports.cifradoPolialfabeticoPeriodico = cifradoPolialfabeticoPeriodico;
 function cifrarLetraMono(letraOriginal, clave) {
     const esMayuscula = letraOriginal === letraOriginal.toUpperCase();
     const base = esMayuscula ? 'A'.charCodeAt(0) : 'a'.charCodeAt(0);
@@ -28,10 +28,10 @@ function cifrarLetraMono(letraOriginal, clave) {
 // Ejemplo de uso
 //   const mensajeOriginal = "HELLO";
 //   const claves = ["KEY1", "KEY2", "KEY3"];
-//   const mensajeCifrado = cifradoPolialfabéticoPeriódico(mensajeOriginal, claves);
+//   const mensajeCifrado = cifradoPolialfabeticoPeriodico(mensajeOriginal, claves);
 //   console.log("Mensaje Original:", mensajeOriginal);
 //   console.log("Mensaje Cifrado:", mensajeCifrado);
-function descifradoPolialfabéticoPeriódico(textoCifrado, claves) {
+function descifradoPolialfabeticoPeriodico(textoCifrado, claves) {
     let resultado = '';
     for (let i = 0; i < textoCifrado.length; i++) {
         const letraCifrada = textoCifrado[i];
@@ -42,12 +42,12 @@ function descifradoPolialfabéticoPeriódico(textoCifrado, claves) {
             resultado += letraDescifrada;
         }
         else {
-            resultado += letraCifrada; // Mantener caracteres no alfabéticos sin cambios
+            resultado += letraCifrada; // Mantener caracteres no alfabeticos sin cambios
         }
     }
     return resultado;
 }
-exports.descifradoPolialfabéticoPeriódico = descifradoPolialfabéticoPeriódico;
+exports.descifradoPolialfabeticoPeriodico = descifradoPolialfabeticoPeriodico;
 function descifrarLetra(letraCifrada, clave) {
     const esMayuscula = letraCifrada === letraCifrada.toUpperCase();
     const base = esMayuscula ? 'A'.charCodeAt(0) : 'a'.charCodeAt(0);
@@ -58,7 +58,7 @@ function descifrarLetra(letraCifrada, clave) {
 // Ejemplo de uso
 //   const mensajeCifrado = "RIJVSUYVJN";
 //   const claves = ["KEY1", "KEY2", "KEY3"];
-//   const mensajeDescifrado = descifradoPolialfabéticoPeriódico(mensajeCifrado, claves);
+//   const mensajeDescifrado = descifradoPolialfabeticoPeriodico(mensajeCifrado, claves);
 //   console.log("Mensaje Cifrado:", mensajeCifrado);
 //   console.log("Mensaje Descifrado:", mensajeDescifrado);
 //# sourceMappingURL=polialfabeticosPeriodicos.js.map

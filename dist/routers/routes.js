@@ -20,21 +20,21 @@ router.post('/cifradoPorSeries', [
 router.post('/cifradoZigZag', [
     (0, express_validator_1.check)('mensaje', 'El mensaje es obligatoria').not().isEmpty(),
 ], transposicion_controller_1.cifradoZigZagController);
-router.post('/cifradoMonoalfabético', [
+router.post('/cifradoMonoalfabetico', [
     (0, express_validator_1.check)('mensaje', 'El mensaje es obligatoria').not().isEmpty(),
-], monoAlfabetico_controller_1.cifradoMonoalfabéticoController);
-router.post('/descifradoMonoalfabético', [
+], monoAlfabetico_controller_1.cifradoMonoalfabeticoController);
+router.post('/descifradoMonoalfabetico', [
     (0, express_validator_1.check)('mensaje', 'El mensaje es obligatoria').not().isEmpty(),
-], monoAlfabetico_controller_1.descifradoMonoalfabéticoController);
-router.post('/cifradoSustitucionPolialfabética', [
+], monoAlfabetico_controller_1.descifradoMonoalfabeticoController);
+router.post('/cifradoSustitucionPolialfabetica', [
     (0, express_validator_1.check)('mensaje', 'El mensaje es obligatoria').not().isEmpty(),
-], poliAlfabetico_controller_1.cifradoSustitucionPolialfabéticaController);
-router.post('/cifradoPolialfabéticoPeriódico', [
+], poliAlfabetico_controller_1.cifradoSustitucionPolialfabeticaController);
+router.post('/cifradoPolialfabeticoPeriodico', [
     (0, express_validator_1.check)('mensaje', 'El mensaje es obligatoria').not().isEmpty(),
-], poliAlfabeticosPeriodicos_controller_1.cifradoPolialfabéticoPeriódicoController);
-router.post('/descifradoPolialfabéticoPeriódico', [
+], poliAlfabeticosPeriodicos_controller_1.cifradoPolialfabeticoPeriodicoController);
+router.post('/descifradoPolialfabeticoPeriodico', [
     (0, express_validator_1.check)('mensaje', 'El mensaje es obligatoria').not().isEmpty(),
-], poliAlfabeticosPeriodicos_controller_1.descifradoPolialfabéticoPeriódicoController);
+], poliAlfabeticosPeriodicos_controller_1.descifradoPolialfabeticoPeriodicoController);
 router.post('/cifradoPlayfair', [
     (0, express_validator_1.check)('mensaje', 'El mensaje es obligatoria').not().isEmpty(),
 ], sustitucionMonoAlfabetica_controller_1.cifradoPlayfairController);

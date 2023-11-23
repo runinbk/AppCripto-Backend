@@ -9,12 +9,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.cifradoSustitucionPolialfabéticaController = void 0;
+exports.cifradoSustitucionPolialfabeticaController = void 0;
 const poliAlfabetico_1 = require("../helpers/2.sustitucion/poliAlfabetico");
-const cifradoSustitucionPolialfabéticaController = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+const cifradoSustitucionPolialfabeticaController = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { mensaje, clave } = req.body;
     try {
-        const mensajeCifrado = (0, poliAlfabetico_1.cifradoSustitucionPolialfabética)(mensaje, clave);
+        const mensajeCifrado = (0, poliAlfabetico_1.cifradoSustitucionPolialfabetica)(mensaje, clave);
         res.json({
             mensajeCifrado,
             msg: 'Para descifrar vuelva a aplicar el mismo metodo con el mensaje sifrado y el mismo valor que acompaña al cifrado.'
@@ -27,5 +27,5 @@ const cifradoSustitucionPolialfabéticaController = (req, res) => __awaiter(void
         });
     }
 });
-exports.cifradoSustitucionPolialfabéticaController = cifradoSustitucionPolialfabéticaController;
+exports.cifradoSustitucionPolialfabeticaController = cifradoSustitucionPolialfabeticaController;
 //# sourceMappingURL=poliAlfabetico.controller.js.map

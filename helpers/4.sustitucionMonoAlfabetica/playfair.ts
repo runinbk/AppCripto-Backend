@@ -123,7 +123,7 @@ function descifrarPar(matriz: string[][], par: string): string {
     return descifrado;
 }
 
-// Resto del código (funciones auxiliares)...
+// Resto del codigo (funciones auxiliares)...
 
 // Ejemplo de uso
 //   const mensajeCifrado = "RHELXOX";
